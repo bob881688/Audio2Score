@@ -1,27 +1,36 @@
-# FastAPI and server
+# FastAPI 核心套件
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
+
+# 資料庫相關
+asyncpg==0.29.0
+databases==0.8.0
+
+# 認證與安全
+bcrypt==4.1.1
+PyJWT==2.8.0
 python-multipart==0.0.6
-
-# Database
-psycopg2-binary==2.9.9
-sqlalchemy==2.0.23
-
-# Authentication
-python-jose[cryptography]==3.3.0
+email-validator==2.0.0.post2
+python-jose==3.3.0
 passlib[bcrypt]==1.7.4
+
+# 環境變數與設定
 python-dotenv==1.0.0
 
-# Audio processing
-basic-pitch==0.2.5
-tensorflow==2.13.0
-librosa==0.10.1
-soundfile==0.12.1
-numpy==1.24.4
-
-# Utilities
+# 資料驗證
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
-# Testing
-requests==2.31.0
+# CORS 與中間件
+python-dateutil==2.8.2
+
+# 生產環境伺服器（選用）
+gunicorn==21.2.0
+
+# 開發工具（選用）
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# 訓練與音訊處理相關套件
+basic-pitch==0.4.0
