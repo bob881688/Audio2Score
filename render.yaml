@@ -3,9 +3,6 @@ services:
   - type: pserv
     name: audio2score-db
     plan: free
-    database: audio2score
-    databaseName: audio2score
-    databaseUser: audio2score_user
 
   # Python/FastAPI Backend Service
   - type: web
