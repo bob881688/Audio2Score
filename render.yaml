@@ -2,9 +2,7 @@ services:
   # PostgreSQL Database
   - type: pserv
     name: audio2score-db
-    env: docker
     plan: free
-    ipAllowList: []
 
   # Python/FastAPI Backend Service
   - type: web
